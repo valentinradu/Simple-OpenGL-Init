@@ -13,7 +13,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    
+    UIViewController * ctrl = [[UIViewController alloc] init];
+    
+    //these are the only three lines you
+    //need to write in order to init your GLKView
+    //while there are several options you could set here too,
+    //you can actually skip them and go straight ahead to
+    //SGLView (which is a subclass of GLKView by the way) drawRect: method
+    //and start drawing in it
+    
+    //we create the context using the latest API
+    EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    [EAGLContext setCurrentContext:context];
+    //we init our GLKView subclass with our newly created context
+    SGLView * view = [[SGLView alloc] initWithFrame:self.window.frame context:context];
+    
+    
+    
+    ctrl.view = view;
+    
+    self.window.rootViewController = ctrl;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

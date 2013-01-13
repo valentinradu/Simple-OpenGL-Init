@@ -16,6 +16,9 @@
 		B0217E8116A319110045B2B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B0217E8016A319110045B2B7 /* Default.png */; };
 		B0217E8316A319110045B2B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0217E8216A319110045B2B7 /* Default@2x.png */; };
 		B0217E8516A319110045B2B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0217E8416A319110045B2B7 /* Default-568h@2x.png */; };
+		B0217E8F16A319F90045B2B7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0217E8E16A319F90045B2B7 /* GLKit.framework */; };
+		B0217E9216A31DCA0045B2B7 /* SGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0217E9116A31DCA0045B2B7 /* SGLView.m */; };
+		B0217E9416A31E610045B2B7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0217E9316A31E610045B2B7 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		B0217E8016A319110045B2B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B0217E8216A319110045B2B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B0217E8416A319110045B2B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B0217E8E16A319F90045B2B7 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B0217E9016A31DCA0045B2B7 /* SGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLView.h; sourceTree = "<group>"; };
+		B0217E9116A31DCA0045B2B7 /* SGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLView.m; sourceTree = "<group>"; };
+		B0217E9316A31E610045B2B7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0217E9416A31E610045B2B7 /* OpenGLES.framework in Frameworks */,
+				B0217E8F16A319F90045B2B7 /* GLKit.framework in Frameworks */,
 				B0217E6F16A319110045B2B7 /* UIKit.framework in Frameworks */,
 				B0217E7116A319110045B2B7 /* Foundation.framework in Frameworks */,
 				B0217E7316A319110045B2B7 /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +77,8 @@
 		B0217E6D16A319110045B2B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0217E9316A31E610045B2B7 /* OpenGLES.framework */,
+				B0217E8E16A319F90045B2B7 /* GLKit.framework */,
 				B0217E6E16A319110045B2B7 /* UIKit.framework */,
 				B0217E7016A319110045B2B7 /* Foundation.framework */,
 				B0217E7216A319110045B2B7 /* CoreGraphics.framework */,
@@ -80,6 +91,8 @@
 			children = (
 				B0217E7D16A319110045B2B7 /* SGLAppDelegate.h */,
 				B0217E7E16A319110045B2B7 /* SGLAppDelegate.m */,
+				B0217E9016A31DCA0045B2B7 /* SGLView.h */,
+				B0217E9116A31DCA0045B2B7 /* SGLView.m */,
 				B0217E7516A319110045B2B7 /* Supporting Files */,
 			);
 			path = SimpleOpenGLInit;
@@ -167,6 +180,7 @@
 			files = (
 				B0217E7B16A319110045B2B7 /* main.m in Sources */,
 				B0217E7F16A319110045B2B7 /* SGLAppDelegate.m in Sources */,
+				B0217E9216A31DCA0045B2B7 /* SGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
+#import "SGLView.h"
 
 @interface SGLAppDelegate : UIResponder <UIApplicationDelegate>
 
