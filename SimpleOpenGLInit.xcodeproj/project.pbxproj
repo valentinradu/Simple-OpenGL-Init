@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0217E6F16A319110045B2B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0217E6E16A319110045B2B7 /* UIKit.framework */; };
+		B0217E7116A319110045B2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0217E7016A319110045B2B7 /* Foundation.framework */; };
+		B0217E7316A319110045B2B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0217E7216A319110045B2B7 /* CoreGraphics.framework */; };
+		B0217E7916A319110045B2B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0217E7716A319110045B2B7 /* InfoPlist.strings */; };
+		B0217E7B16A319110045B2B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0217E7A16A319110045B2B7 /* main.m */; };
+		B0217E7F16A319110045B2B7 /* SGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0217E7E16A319110045B2B7 /* SGLAppDelegate.m */; };
+		B0217E8116A319110045B2B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B0217E8016A319110045B2B7 /* Default.png */; };
+		B0217E8316A319110045B2B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0217E8216A319110045B2B7 /* Default@2x.png */; };
+		B0217E8516A319110045B2B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0217E8416A319110045B2B7 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B0217E6A16A319110045B2B7 /* SimpleOpenGLInit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOpenGLInit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0217E6E16A319110045B2B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B0217E7016A319110045B2B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0217E7216A319110045B2B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B0217E7616A319110045B2B7 /* SimpleOpenGLInit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleOpenGLInit-Info.plist"; sourceTree = "<group>"; };
+		B0217E7816A319110045B2B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0217E7A16A319110045B2B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0217E7C16A319110045B2B7 /* SimpleOpenGLInit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleOpenGLInit-Prefix.pch"; sourceTree = "<group>"; };
+		B0217E7D16A319110045B2B7 /* SGLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGLAppDelegate.h; sourceTree = "<group>"; };
+		B0217E7E16A319110045B2B7 /* SGLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGLAppDelegate.m; sourceTree = "<group>"; };
+		B0217E8016A319110045B2B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B0217E8216A319110045B2B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B0217E8416A319110045B2B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0217E6716A319110045B2B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0217E6F16A319110045B2B7 /* UIKit.framework in Frameworks */,
+				B0217E7116A319110045B2B7 /* Foundation.framework in Frameworks */,
+				B0217E7316A319110045B2B7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0217E5F16A319110045B2B7 = {
+			isa = PBXGroup;
+			children = (
+				B0217E7416A319110045B2B7 /* SimpleOpenGLInit */,
+				B0217E6D16A319110045B2B7 /* Frameworks */,
+				B0217E6B16A319110045B2B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0217E6B16A319110045B2B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0217E6A16A319110045B2B7 /* SimpleOpenGLInit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0217E6D16A319110045B2B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0217E6E16A319110045B2B7 /* UIKit.framework */,
+				B0217E7016A319110045B2B7 /* Foundation.framework */,
+				B0217E7216A319110045B2B7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0217E7416A319110045B2B7 /* SimpleOpenGLInit */ = {
+			isa = PBXGroup;
+			children = (
+				B0217E7D16A319110045B2B7 /* SGLAppDelegate.h */,
+				B0217E7E16A319110045B2B7 /* SGLAppDelegate.m */,
+				B0217E7516A319110045B2B7 /* Supporting Files */,
+			);
+			path = SimpleOpenGLInit;
+			sourceTree = "<group>";
+		};
+		B0217E7516A319110045B2B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0217E7616A319110045B2B7 /* SimpleOpenGLInit-Info.plist */,
+				B0217E7716A319110045B2B7 /* InfoPlist.strings */,
+				B0217E7A16A319110045B2B7 /* main.m */,
+				B0217E7C16A319110045B2B7 /* SimpleOpenGLInit-Prefix.pch */,
+				B0217E8016A319110045B2B7 /* Default.png */,
+				B0217E8216A319110045B2B7 /* Default@2x.png */,
+				B0217E8416A319110045B2B7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0217E6916A319110045B2B7 /* SimpleOpenGLInit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0217E8816A319110045B2B7 /* Build configuration list for PBXNativeTarget "SimpleOpenGLInit" */;
+			buildPhases = (
+				B0217E6616A319110045B2B7 /* Sources */,
+				B0217E6716A319110045B2B7 /* Frameworks */,
+				B0217E6816A319110045B2B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleOpenGLInit;
+			productName = SimpleOpenGLInit;
+			productReference = B0217E6A16A319110045B2B7 /* SimpleOpenGLInit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0217E6116A319110045B2B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SGL;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Valentin Radu";
+			};
+			buildConfigurationList = B0217E6416A319110045B2B7 /* Build configuration list for PBXProject "SimpleOpenGLInit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0217E5F16A319110045B2B7;
+			productRefGroup = B0217E6B16A319110045B2B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0217E6916A319110045B2B7 /* SimpleOpenGLInit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0217E6816A319110045B2B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0217E7916A319110045B2B7 /* InfoPlist.strings in Resources */,
+				B0217E8116A319110045B2B7 /* Default.png in Resources */,
+				B0217E8316A319110045B2B7 /* Default@2x.png in Resources */,
+				B0217E8516A319110045B2B7 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0217E6616A319110045B2B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0217E7B16A319110045B2B7 /* main.m in Sources */,
+				B0217E7F16A319110045B2B7 /* SGLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0217E7716A319110045B2B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0217E7816A319110045B2B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0217E8616A319110045B2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0217E8716A319110045B2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0217E8916A319110045B2B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleOpenGLInit/SimpleOpenGLInit-Prefix.pch";
+				INFOPLIST_FILE = "SimpleOpenGLInit/SimpleOpenGLInit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0217E8A16A319110045B2B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleOpenGLInit/SimpleOpenGLInit-Prefix.pch";
+				INFOPLIST_FILE = "SimpleOpenGLInit/SimpleOpenGLInit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0217E6416A319110045B2B7 /* Build configuration list for PBXProject "SimpleOpenGLInit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0217E8616A319110045B2B7 /* Debug */,
+				B0217E8716A319110045B2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0217E8816A319110045B2B7 /* Build configuration list for PBXNativeTarget "SimpleOpenGLInit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0217E8916A319110045B2B7 /* Debug */,
+				B0217E8A16A319110045B2B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0217E6116A319110045B2B7 /* Project object */;
+}
