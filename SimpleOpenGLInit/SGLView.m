@@ -57,7 +57,7 @@ static const GLbyte indexData[kIndexNum] =
         
         
         //the effect makes our life easier
-        //we need not worry about the colour array for now
+        //we need not worry about the colour array nor the projection
         effect = [[GLKBaseEffect alloc] init];
         effect.useConstantColor = GL_TRUE;
         
@@ -80,11 +80,17 @@ static const GLbyte indexData[kIndexNum] =
         
         glGenBuffers(1, &vertexBuffer);
         glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-        glBufferData(GL_ARRAY_BUFFER, kVertexNum*sizeof(GLKVector3), &vertexData, GL_STATIC_DRAW);
+        glBufferData(GL_ARRAY_BUFFER,
+                     kVertexNum*sizeof(GLKVector3),
+                     &vertexData,
+                     GL_STATIC_DRAW);
         
         glGenBuffers(1, &indexBuffer);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
-        glBufferData(GL_ELEMENT_ARRAY_BUFFER, kIndexNum*sizeof(GLbyte), &indexData, GL_STATIC_DRAW);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER,
+                     kIndexNum*sizeof(GLbyte),
+                     &indexData,
+                     GL_STATIC_DRAW);
         
         glBindBuffer(GL_ARRAY_BUFFER,0);
         glBindVertexArrayOES(0);
@@ -107,7 +113,12 @@ static const GLbyte indexData[kIndexNum] =
     //draw
     glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
     glEnableVertexAttribArray(GLKVertexAttribPosition);
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(GLKVector3), (void*)0);
+    glVertexAttribPointer(GLKVertexAttribPosition,
+                          3,
+                          GL_FLOAT,
+                          GL_FALSE,
+                          sizeof(GLKVector3),
+                          (void*)0);
     [effect prepareToDraw];
     
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
