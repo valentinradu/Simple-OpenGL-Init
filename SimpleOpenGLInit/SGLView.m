@@ -119,10 +119,6 @@ static const GLbyte indexData[kIndexNum] =
     
     glBindVertexArrayOES(vertexArray);
     glDrawElements(GL_TRIANGLE_STRIP, kIndexNum, GL_UNSIGNED_BYTE, (void*)0);
-<<<<<<< HEAD
-    
-=======
->>>>>>> Sample uses vertex arrays
     glBindVertexArrayOES(0);
 }
 
