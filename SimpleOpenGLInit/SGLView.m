@@ -124,8 +124,6 @@ static const GLbyte indexData[kIndexNum] =
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
     glDrawElements(GL_TRIANGLE_STRIP, kIndexNum, GL_UNSIGNED_BYTE, (void*)0);
     
-    
-    glBindBuffer(GL_ARRAY_BUFFER,0);
     glBindVertexArrayOES(0);
 }
 
