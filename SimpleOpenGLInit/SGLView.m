@@ -92,7 +92,14 @@ static const GLbyte indexData[kIndexNum] =
                      &indexData,
                      GL_STATIC_DRAW);
         
-        glBindBuffer(GL_ARRAY_BUFFER,0);
+        glEnableVertexAttribArray(GLKVertexAttribPosition);
+        glVertexAttribPointer(GLKVertexAttribPosition,
+                              3,
+                              GL_FLOAT,
+                              GL_FALSE,
+                              sizeof(GLKVector3),
+                              (void*)0);
+        
         glBindVertexArrayOES(0);
         
     }
@@ -103,27 +110,19 @@ static const GLbyte indexData[kIndexNum] =
 - (void)drawRect:(CGRect)rect
 {
     
+    [effect prepareToDraw];
+    
     //clear the screen
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     
     
     glBindVertexArrayOES(vertexArray);
-    
-    //draw
-    glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-    glEnableVertexAttribArray(GLKVertexAttribPosition);
-    glVertexAttribPointer(GLKVertexAttribPosition,
-                          3,
-                          GL_FLOAT,
-                          GL_FALSE,
-                          sizeof(GLKVector3),
-                          (void*)0);
-    [effect prepareToDraw];
-    
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
     glDrawElements(GL_TRIANGLE_STRIP, kIndexNum, GL_UNSIGNED_BYTE, (void*)0);
+<<<<<<< HEAD
     
+=======
+>>>>>>> Sample uses vertex arrays
     glBindVertexArrayOES(0);
 }
 
